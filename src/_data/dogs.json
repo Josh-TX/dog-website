@@ -1,0 +1,35 @@
+{
+    "litters": [
+        {
+            "breed": "F1b medium Goldendoodles",
+            "birthdate": "Aug 17th"
+        }
+    ],
+    "adults": [
+        {
+            "name": "Pixie",
+            "breed": "Goldendoodle (F1)",
+            "male": false,
+            "color": "Champagne",
+            "biographies": [
+                "Pixie is your average Goldendoodle who loves attention. She could sit for hours and just be petter.  She loves people and playing fetch.  She will play fetch until she drops and even brings in her balls and sleep with them!  She is so sweet and gentle, great with children  and puppies from her litter are happy, confident, bubbly, and playful, just like momma.",
+                "She lives in our home with my daughter as her special person and they are inseparable. They sleep together, play and go on adventures together."
+            ],
+            "images": [
+                "pixie-1.jpg", "pixie-2.jpg"
+            ]
+        },
+        {
+            "name": "Brody",
+            "breed": "Parti Miniature Poodle",
+            "male": true,
+            "color": "White and Apricot",
+            "biographies": [
+                "Brody is a sweet confident & loving dog who is also very intelligent.  He is happy to sit in your lap and be loved on or give kisses. He also loves to run and play with other dogs.  Structurally very balanced, well proportioned, moving soundly and carries himself well."
+            ],
+            "images": [
+
+            ]
+        }
+    ]
+}

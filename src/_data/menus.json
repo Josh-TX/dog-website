@@ -1,0 +1,20 @@
+{
+  "main": [
+    {
+      "name": "About Us",
+      "url": "/about-us"
+    },
+    {
+      "name": "Available Puppies",
+      "url": "/available-puppies"
+    },
+    {
+      "name": "Our Dogs",
+      "url": "/our-dogs"
+    },
+    {
+      "name": "Contact Us",
+      "url": "/contact-us"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<h1 class="text-shadow mb-4">Our Dogs</h1>
+
+<h4 class="text-shadow mb-4">
+  Here at {{site.name}}, we take great pride in knowing that we stand apart in not only our health testing standards, but also in how our parent dogs are raised.
+</h4>
+
+{% for adult in [dogs.adults[0]]%}
+  <div class="tile mb-4">
+    <h1>{{adult.name}}</h1>
+    <h4>{{adult.color}}
+      {{adult.breed}}</h4>
+    <div class="row">
+      <div class="col-8">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            {% for image in adult.images %}
+              <div class="carousel-item{% if loop.index == 1 %} active{% endif %}" style="max-height: 400px;">
+                <img src="/_assets/images/{{ image }}" class="d-block w-100" alt="image of {{adult.name}}">
+              </div>
+            {% endfor %}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-4">
+        {% for bio in adult.biographies %}
+          <p class="mb-1">{{bio}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endfor %}

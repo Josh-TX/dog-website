@@ -1,0 +1,5 @@
+# About Us {.text-shadow .mb-4}
+
+#### We breed quality health tested dogs with good temperaments, who also are structurally sound. {.text-shadow .mb-4}
+
+We love Goldendoodles!  They are friendly, enthusiastic & happy dogs. Who wouldn't want to come home to a tail wagging goldendoodle who just wants to love you? I love to help people, and responsibly breeding Goldendoodles is a great way to help people enjoy dog ownership with a great pet.  Our mission is to provide the best home raised puppies who will grow into healthy, confident & wonderful lifelong companions.  We health test our adult breeding dogs in order to screen for potential genetic problems.  We limit our breeding of our adult mothers to just 4 or 5 litters of puppies.  We have our parent dogs in a loving home environment.  We raise our puppies with early neurological stimulation (ENS) and using Puppy Culture, both of which help produce confident, well adjusted puppies who turn into great lifelong pets that people want to own.   We give a health guarantee.for 26 months  (see our health guarantee for details). {.tile}
