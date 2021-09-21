@@ -1,4 +1,4 @@
-$primary: #3b2e94;
+$primary: #251d5d;
 
 @import "bootstrap";
 
@@ -10,6 +10,10 @@ $primary: #3b2e94;
 
 .form-control{
   background-color: rgba(255,255,255,0.7);
+}
+
+a{
+  color: rgb(210,210,255) !important;
 }
 
 $tile-background: rgba(23,18,58,0.8);
@@ -27,4 +31,48 @@ $tile-background: rgba(23,18,58,0.8);
 
 .btn-shadow{
   box-shadow: 0 0 0.25rem 0.25rem rgba(0,0,0,0.4);
+}
+
+.aspect-2-1-container {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+
+.aspect-3-2-container {
+  position: relative;
+  width: 100%;
+  padding-top: 66.667%;
+}
+
+.aspect-1-1-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.aspect-1-2-container {
+  position: relative;
+  width: 100%;
+  padding-top: 200%;
+}
+
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.carousel-thumbnail{
+  height: auto !important;
+  width: 75px !important;
+  border: none !important;
+}
+
+.carousel-indicators-below{
+  position: static !important;
+  margin-top: 0.75rem;
+  margin-bottom: 0 !important;
 }

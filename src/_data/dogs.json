@@ -2,7 +2,65 @@
     "litters": [
         {
             "breed": "F1b medium Goldendoodles",
-            "birthdate": "Aug 17th"
+            "birthdate": "Aug 17th",
+            "puppies": [
+                {
+                    "name": "buffalo",
+                    "images": ["litter-1-buffalo.JPG"]
+                },
+                {
+                    "name": "crispy",
+                    "images": ["litter-2-crispy.JPG"]
+                },
+                {
+                    "name": "mayo",
+                    "images": ["litter-3-mayo.JPG"]
+                },
+                {
+                    "name": "ranch",
+                    "images": ["litter-4-ranch.JPG"]
+                },
+                {
+                    "name": "nugget",
+                    "images": ["litter-5-nugget.JPG"]
+                },
+                {
+                    "name": "salsa",
+                    "images": ["litter-6-salsa.JPG"]
+                },
+                {
+                    "name": "spicy",
+                    "images": ["litter-7-spicy.JPG"]
+                },
+                {
+                    "name": "sriracha",
+                    "images": ["litter-8-sriracha.JPG"]
+                }
+            ],
+            "mother": {
+                "name": "Pixie",
+                "breed": "Goldendoodle (F1)",
+                "color": "Champagne",
+                "biographies": [
+                    "Pixie is your average Goldendoodle who loves attention. She could sit for hours and just be petter.  She loves people and playing fetch.  She will play fetch until she drops and even brings in her balls and sleep with them!  She is so sweet and gentle, great with children  and puppies from her litter are happy, confident, bubbly, and playful, just like momma.",
+                    "She lives in our home with my daughter as her special person and they are inseparable. They sleep together, play and go on adventures together."
+                ],
+                "images": [
+                    "pixie-1.jpg", 
+                    "pixie-2.jpg"
+                ]
+            },
+            "father": {
+                "name": "Judah",
+                "breed": "Miniature Poodle",
+                "color": "Brown???",
+                "biographies": [
+                    "Judah did the thing and is now the father"
+                ],
+                "images": [
+                    "judah-1.png"
+                ]
+            }
         }
     ],
     "adults": [
@@ -16,7 +74,8 @@
                 "She lives in our home with my daughter as her special person and they are inseparable. They sleep together, play and go on adventures together."
             ],
             "images": [
-                "pixie-1.jpg", "pixie-2.jpg"
+                "pixie-1.jpg", 
+                "pixie-2.jpg"
             ]
         },
         {
@@ -28,7 +87,10 @@
                 "Brody is a sweet confident & loving dog who is also very intelligent.  He is happy to sit in your lap and be loved on or give kisses. He also loves to run and play with other dogs.  Structurally very balanced, well proportioned, moving soundly and carries himself well."
             ],
             "images": [
-
+                "brody-1.jpg", 
+                "brody-2.jpg",
+                "brody-4.PNG",
+                "brody-3.jpg"
             ]
         }
     ]

@@ -5,3 +5,25 @@
   Our puppies are chosen around 6.5 - 7 weeks of age after temperament is evaluated in order of deposits placed.
   Deposits placed for a Goldendoodle are placed on a master deposit list. 
 </h4>
+
+{% for litter in dogs.litters%}
+  <div class="tile mb-4 px-3 py-3">
+    <h1>{{litter.breed}}</h1>
+    <h4>Born {{litter.birthdate}}</h4>
+    <div class="row gx-3">
+      {% for puppy in litter.puppies %}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          {% for image in puppy.images %}
+            <div class="aspect-1-1-container">
+              <div class="absolute-fill">
+                <img src="/_assets/images/{{ image }}" class="h-100 w-100" style="object-fit: cover;" alt="image of {{puppy.name}}">
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+    <hr>
+    
+  </div>
+{% endfor %}
