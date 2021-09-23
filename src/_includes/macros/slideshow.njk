@@ -1,0 +1,48 @@
+{% macro slideshow(id, images, showThumbnails = true) -%}
+  <div id="slideshow-{{id}}" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <button class="carousel-control-prev" type="button" data-bs-target="#slideshow-{{id}}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slideshow-{{id}}" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      {% for image in images %}
+        <div class="carousel-item{% if loop.index0 == 0 %} active{% endif %}">
+          <div class="aspect-1-1-container">
+            <div class="absolute-fill">
+              <img src="/_assets/images/{{ image }}" class="h-100 w-100" style="object-fit: cover;" alt="image of {{id}}">
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% if showThumbnails %}
+      <div class="carousel-indicators carousel-indicators-below mx-0">
+        {% for image in images %}
+          <button 
+          type="button"
+          data-bs-target="#slideshow-{{id}}" 
+          data-bs-slide-to="{{loop.index0}}" 
+          class="carousel-thumbnail {% if loop.index0 == 0 %} active{% endif %}" 
+          aria-label="Slide 1">
+            <div class="aspect-1-1-container">
+              <div class="absolute-fill border border-white">
+                <img src="/_assets/images/{{ image }}" class="d-block h-100 w-100" style="object-fit: cover;" alt="image of {{id}}">
+              </div>
+            </div>
+          </button>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="carousel-indicators">
+        {% for image in images %}
+          <button type="button" data-bs-target="#slideshow-{{id}}" data-bs-slide-to="{{loop.index0}}" class="{% if loop.index0 == 0 %} active{% endif %}" aria-label="Slide 1"></button>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+{% endmacro %}

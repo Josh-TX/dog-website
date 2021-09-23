@@ -4,5 +4,8 @@
     "description": "Beloved Texas Doodles"
   },
   "language": "en",
-  "name": "Beloved Texas Doodles"
+  "name": "Beloved Texas Doodles",
+  "logoImage": "logo.png",
+  "baseUrl": "http://localhost:8080",
+  "puppyApplicationUrl": "/puppy-application"
 }

@@ -1,56 +1,31 @@
-<h1 class="text-shadow mb-4">Contact Us</h1>
+{% from "macros/text-input.njk" import textInput %}
 
-<h4 class="text-shadow">
-  <a class="text-white text-shadow" href="mailto:belovedtexasdoodles@gmail.com">belovedtexasdoodles@gmail.com</a>
-</h4>
-<h4 class="mb-4">
-  <a class="text-white text-shadow" href="tel:+19727425215">972-742-5215</a>
-</h4>
+<div style="max-width: 55rem" class="mx-auto">
+  <h1 class="text-shadow mb-4">Contact Us</h1>
 
-<form>
-  <div class="row" style="max-width: 800px;">
-    <div class="col-6 mb-3">
-      <div class="form-floating">
-        <input type="text" class="form-control" id="first-name" placeholder="first name">
-        <label for="first-name">First Name</label>
+  <h4 class="text-shadow">
+    <a class="text-white text-shadow" href="mailto:belovedtexasdoodles@gmail.com">belovedtexasdoodles@gmail.com</a>
+  </h4>
+  <h4 class="mb-4">
+    <a class="text-white text-shadow" href="tel:+19727425215">972-742-5215</a>
+  </h4>
+  <div class="tile mb-4">
+    <h6 class="mb-3">Interested in a Puppy? Please use our <a href="{{site.puppyApplicationUrl}}" class="btn btn-sm btn-light text-primary fw-bolder">Puppy Application</a> instead</h6>
+    <form action="https://api.staticforms.xyz/submit" method="post" class="text-dark">
+      <input type="hidden" name="accessKey" value="f2012f3e-690c-4220-9327-b5e5ac0eac20">
+      <input type="hidden" name="redirectTo" value="{{site.baseUrl}}/contact-us/success">
+      <input type="text" name="honeypot" style="display: none;">
+      <div class="row">
+        {{textInput(6, 'first-name', 'First Name', 'text')}}
+        {{textInput(6, 'last-name', 'Last Name', 'text')}}
+        {{textInput(12, 'city-state', 'City & State', 'text')}}
+        {{textInput(12, 'email', 'Email', 'email')}}
+        {{textInput(12, 'Phone', 'Phone', 'tel')}}
+        {{textInput(12, 'message', 'Message', 'textarea')}}
       </div>
-    </div>
-    <div class="col-6 mb-3">
-      <div class="form-floating">
-        <input type="text" class="form-control" id="last-name" placeholder="last name">
-        <label for="last-name">Last Name</label>
+      <div class="text-center py-3">
+        <input class="btn btn-lg btn-light text-primary fw-bold" type="submit">
       </div>
-    </div>
-    <div class="col-12 mb-3">
-      <div class="form-floating">
-        <input type="text" class="form-control" id="city-state" placeholder="City & State">
-        <label for="city-state">City & State</label>
-      </div>
-    </div>
-
-    <div class="col-12 mb-3">
-      <div class="form-floating">
-        <input type="tel" class="form-control" id="phone" placeholder="phone">
-        <label for="phone">Phone</label>
-      </div>
-    </div>
-
-    <div class="col-12 mb-3">
-      <div class="form-floating">
-        <input type="email" class="form-control" id="email" placeholder="email">
-        <label for="email">Email</label>
-      </div>
-    </div>
-
-    <div class="col-12 mb-3">
-      <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="message" style="height: 10rem;"></textarea>
-        <label for="message">Message</label>
-      </div>
-    </div>
-
-    <div class="col-12 text-center mb-3">
-      <input class="btn btn-lg btn-primary btn-shadow" type="submit">
-    </div>
+    </form>
   </div>
-</form>
+</div>

@@ -6,14 +6,14 @@
     {% endblock head %}
   </head>
   <body class="d-flex flex-column justify-content-between min-vh-100">
+
     {% block header %}
       {% include "components/header.njk" %}
     {% endblock header %}
 
     {% block content %}
-      <main class="bluebonnets flex-grow-1">
+      <main class="bluebonnets flex-grow-1 pt-3">
         <div class="container">
-          <h1>{{ env.current }}</h1>
           {{ content|safe }}
         </div>
       </main>
@@ -24,6 +24,7 @@
     {% endblock footer %}
 
     {% block js %}
+      <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
       <script src="/_assets/parcel.js"></script>
 
       {% if env.isDev %}

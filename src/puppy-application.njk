@@ -1,0 +1,46 @@
+{% from "macros/text-input.njk" import textInput %}
+{% from "macros/dropdown-select.njk" import dropdownSelect %}
+
+<div style="max-width: 55rem" class="mx-auto">
+  <h1 class="text-shadow mb-4">Puppy Application</h1>
+
+  <h4 class="text-shadow mb-3">Please fill out a puppy application to get started.</h4>
+
+  <div class="tile mb-4">
+    <p>All Doodle puppies are $2500 plus 8.25% sales tax, regardless of size, color or gender.</p>
+
+    <p>Please be as specific as possible. We use this form, along with speaking in depth over the phone with you, to help us help you pick out the right match based on temperament.</p>
+
+    <form action="https://api.staticforms.xyz/submit" method="post" class="text-dark">
+      <input type="hidden" name="accessKey" value="f2012f3e-690c-4220-9327-b5e5ac0eac20">
+      <input type="hidden" name="redirectTo" value="{{site.baseUrl}}/puppy-application/success">
+      <input type="text" name="honeypot" style="display: none;">
+      <div class="row">
+        {{textInput(6, 'first-name', 'First Name', 'text')}}
+        {{textInput(6, 'last-name', 'Last Name', 'text')}}
+        {{textInput(12, 'email', 'Email', 'text')}}
+        {{textInput(12, 'Phone', 'Phone', 'tel')}}
+        {{textInput(12, 'address1', 'Address Line 1', 'text')}}
+        {{textInput(12, 'address2', 'Address Line 2', 'text', false)}}
+        {{textInput(6, 'city', 'City', 'text')}}
+        {{textInput(6, 'state', 'State', 'text')}}
+        {{textInput(6, 'zip', 'Zip/Postal Code', 'text')}}
+        {{textInput(6, 'country', 'Country', 'text', false)}}
+        {{textInput(12, 'occupation', 'Occupation? Work from home?', 'textarea')}}
+        {{dropdownSelect(12, 'gender', 'What gender do you prefer?', ['Male', 'Female', 'Either is Fine'])}}
+        {{textInput(12, 'any-children', 'Do you have any children? If so, what are their ages?', 'textarea')}}
+        {{textInput(12, 'any-pets', 'Any pets living in the home? What type/age(s)?', 'textarea')}}
+        {{dropdownSelect(12, 'housing', 'Housing Type', ['House', 'Apartment'])}}
+        {{dropdownSelect(12, 'fence', 'Do you have a fenced yard?', ['Yes', 'No'])}}
+        {{textInput(12, 'time-puppy-alone', 'What is the average amount of time your puppy will be home alone each week?', 'textarea')}}
+        {{textInput(12, 'plan-puppy-alone', 'What is your plan for your puppy during the time he/she will be home alone?', 'textarea')}}
+        {{dropdownSelect(12, 'no-breeding', 'Our puppies are sold on a strict "No-Breeding" contract, do you accept this?', ['Yes', 'No'])}}
+        {{textInput(12, 'looking-for', 'Can you tell us more about what you are looking for in a puppy? Temperament, activity level, coat type, color, etc.', 'textarea')}}
+        {{textInput(12, 'anything-else', 'Anything else you feel is important for us to know?', 'textarea')}}
+      </div>
+      <div class="text-center py-3">
+        <input class="btn btn-lg btn-light text-primary fw-bold" type="submit">
+      </div>
+    </form>
+  </div>
+</div>

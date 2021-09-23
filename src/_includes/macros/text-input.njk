@@ -1,0 +1,11 @@
+{% macro textInput(col, id, label, type, required = true) -%}
+  <div class="col-sm-{{col}} mb-3">
+    <label class="text-white mb-1" for="{{id}}">{{label}}</label>
+    {% if type != 'textarea' %}
+      <input type="{{type}}" class="form-control" id="{{id}}" {% if required == true %}required{%endif%} name="${{label}}">
+    {% endif %}
+    {% if type == 'textarea' %}
+      <textarea class="form-control" id="{{id}}" required name="${{label}}"></textarea>
+    {% endif %}
+  </div>
+{% endmacro %}

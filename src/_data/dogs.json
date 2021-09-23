@@ -1,40 +1,49 @@
 {
     "litters": [
         {
+            "name": "pixie-litter-4",
             "breed": "F1b medium Goldendoodles",
-            "birthdate": "Aug 17th",
+            "updates": [
+                "Pixie (F1 Goldendoodle) and Judah (miniature poodle) welcomed 9 puppies on Aug 17th.",
+                "Puppies will be ready to go home October 12th. They will grow to be around 30-35 lbs as adults."
+            ],
+            "canApply": true,
             "puppies": [
                 {
+                    "name": "Honey Mustard",
+                    "images": ["litter-9-honey-mustard-2.JPG"]
+                },
+                {
                     "name": "buffalo",
-                    "images": ["litter-1-buffalo.JPG"]
+                    "images": ["litter-1-buffalo-2.JPG"]
                 },
                 {
                     "name": "crispy",
-                    "images": ["litter-2-crispy.JPG"]
+                    "images": ["litter-2-crispy-2.JPG"]
                 },
                 {
                     "name": "mayo",
-                    "images": ["litter-3-mayo.JPG"]
+                    "images": ["litter-3-mayo-2.JPG"]
                 },
                 {
                     "name": "ranch",
-                    "images": ["litter-4-ranch.JPG"]
+                    "images": ["litter-4-ranch-2.JPG"]
                 },
                 {
                     "name": "nugget",
-                    "images": ["litter-5-nugget.JPG"]
+                    "images": ["litter-5-nugget-2.JPG"]
                 },
                 {
                     "name": "salsa",
-                    "images": ["litter-6-salsa.JPG"]
+                    "images": ["litter-6-salsa-2.JPG"]
                 },
                 {
                     "name": "spicy",
-                    "images": ["litter-7-spicy.JPG"]
+                    "images": ["litter-7-spicy-2.JPG"]
                 },
                 {
                     "name": "sriracha",
-                    "images": ["litter-8-sriracha.JPG"]
+                    "images": ["litter-8-sriracha-2.JPG"]
                 }
             ],
             "mother": {
@@ -42,8 +51,7 @@
                 "breed": "Goldendoodle (F1)",
                 "color": "Champagne",
                 "biographies": [
-                    "Pixie is your average Goldendoodle who loves attention. She could sit for hours and just be petter.  She loves people and playing fetch.  She will play fetch until she drops and even brings in her balls and sleep with them!  She is so sweet and gentle, great with children  and puppies from her litter are happy, confident, bubbly, and playful, just like momma.",
-                    "She lives in our home with my daughter as her special person and they are inseparable. They sleep together, play and go on adventures together."
+                    "Pixie (55lbs.) is a sweetheart who just wants to be near her owners and play fetch. She is gentle, quiet, and always happy.  She is a devoted mom who's super focused on her puppies."
                 ],
                 "images": [
                     "pixie-1.jpg", 
@@ -53,14 +61,21 @@
             "father": {
                 "name": "Judah",
                 "breed": "Miniature Poodle",
-                "color": "Brown???",
+                "color": "Red",
                 "biographies": [
-                    "Judah did the thing and is now the father"
+                    "Judah (15 lbs.) is sweet, intelligent, handsome and just an overall wonderful example of a miniature poodle."
                 ],
                 "images": [
-                    "judah-1.png"
+                    "judah-1.png",
+                    "judah-2.png",
+                    "judah-3.jpg"
                 ]
-            }
+            },
+            "images": [
+                "pixie-litter-1.jpg",
+                "pixie-litter-2.jpg",
+                "pixie-litter-3.jpg"
+            ]
         }
     ],
     "adults": [
@@ -70,8 +85,8 @@
             "male": false,
             "color": "Champagne",
             "biographies": [
-                "Pixie is your average Goldendoodle who loves attention. She could sit for hours and just be petter.  She loves people and playing fetch.  She will play fetch until she drops and even brings in her balls and sleep with them!  She is so sweet and gentle, great with children  and puppies from her litter are happy, confident, bubbly, and playful, just like momma.",
-                "She lives in our home with my daughter as her special person and they are inseparable. They sleep together, play and go on adventures together."
+                "Pixie is your typical Goldendoodle who loves attention. She could sit for hours and just be petted.  She loves people and playing fetch.  She will play fetch until she drops and even brings in her balls and sleep with them! She is so sweet and gentle, great with children. Puppies from her litter are happy, confident, bubbly, and playful, just like momma.",
+                "She lives in our home with my daughter as her special person and they are inseparable. They sleep together, play and go on adventures."
             ],
             "images": [
                 "pixie-1.jpg", 
@@ -84,13 +99,25 @@
             "male": true,
             "color": "White and Apricot",
             "biographies": [
-                "Brody is a sweet confident & loving dog who is also very intelligent.  He is happy to sit in your lap and be loved on or give kisses. He also loves to run and play with other dogs.  Structurally very balanced, well proportioned, moving soundly and carries himself well."
+                "Brody is a sweet confident & loving dog who is also very intelligent.  He is happy to sit in your lap and be loved on or give kisses. He also loves to run and play with other dogs.  Structurally very balanced, well proportioned, moving soundly and carries himself well. Available as a stud with live cover or side by side AI (within 1 hour of Allen Texas).  Also our reprodutive vet can ship fresh or frozen semen.",
+                "Height: 14.5\", Weight: 15 lbs"
             ],
             "images": [
                 "brody-1.jpg", 
                 "brody-2.jpg",
                 "brody-4.PNG",
                 "brody-3.jpg"
+            ],
+            "dnaTable": [
+                ["at/at", "(Tricolor, black and tan)"],
+                ["cd/cd", ""],
+                ["Cu/CuC", "(Wavy/Curly coat)"],
+                ["I/i", ""],
+                ["F/Fi", ""],
+                ["KB/ky", "(Carries Phantom)"],
+                ["sp/sp", "(White Spotting, Parti, or Piebald)"],
+                ["e/e B/b", "(Carries brown)"],
+                ["Carrier for PRA/PRCD", ""]
             ]
         }
     ]

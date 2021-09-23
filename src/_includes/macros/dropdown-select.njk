@@ -1,0 +1,11 @@
+{% macro dropdownSelect(col, id, label, options) -%}
+  <div class="col-{{col}} mb-3">
+    <label class="text-white mb-1" for="{{id}}">{{label}}</label>
+    <select class="form-select" required>
+      <option class="text-muted" value="">(select an option)</option>
+      {% for option in options %}
+        <option value="{{option}}">{{option}}</option>
+      {% endfor %}
+    </select>
+  </div>
+{% endmacro %}

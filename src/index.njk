@@ -1,0 +1,36 @@
+<h1 class="text-shadow text-center">Healthy & Beautiful Goldendoodle Puppies</h1>
+<h4 class="text-shadow text-center mb-3">Goldendoodle puppies are raised in our home using Early Neurological Stimulation and Puppy Culture.  </h4>
+
+<h4 class="text-shadow text-center mb-3">Puppies come with a two year health guarantee and come pre-loved and pre-spoiled.</h4>
+<div class="tile mb-3">
+    <h5 class="mb-4">Here at {{site.name}}, we are breeding carefully selected, allergen friendly Goldendoodles. Our puppies grow up into wonderful family pets, therapy dogs, and even service dogs. We are located just north of Dallas and  deliver puppies  all over the U.S. and Canada.</h5>
+    <p>We believe strongly in the health and welfare of our puppies and only breed dogs that have been health tested/certified with OFA or Pennhip, CAER, and a full DNA panel to ensure your puppy cannot inherent any genetic diseases. To back this up, we offer a two year health guarantee for each of our puppies. Our goal as a responsible breeder is to do everything we possibly can to produce the healthiest litters due to our good genetics and diligent health testing protocols. Additionally, we raise our puppies using Puppy Culture which produces well rounded, well socialized puppies that grow into healthy, happy adults.</p>
+</div>
+<h1 class="text-shadow text-center">Puppies have been born & applications are open<h1>
+<div class="text-center mb-4"><button class="btn btn-lg btn-primary px-4 btn-shadow">Apply Now</button></div>
+
+<div class="row justify-content-around">
+    {% for video in videos %}
+        <div class="col-auto mb-3">
+            <div class="fb-video" data-href="{{video}}" data-width="500" data-show-text="false">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="{{video}}">
+                        <a href="{{video}}">How to Share With Just Friends</a>
+                        <p>How to share with just friends.</p>
+        Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
+      </blockquote>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="text-center mb-4"><a href="/available-puppies" class="btn btn-lg btn-primary px-4 btn-shadow text-white">See More</a></div>
+
+<div class="tile mb-3">
+    <h3 class="text-center">Follow us on social media</h3>
+    <div class="text-center">
+        <a href="{{ contact.instagram }}" class="btn btn-light mx-3 text-primary fw-bold">Facebook</a>
+        <a href="{{ contact.facebook }}" class="btn btn-light mx-3 text-primary fw-bold">Instagram</a>
+    </div>
+</div>

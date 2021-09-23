@@ -1,0 +1,59 @@
+<h1 class="text-shadow mb-4">Contact Us</h1>
+
+<h4 class="text-shadow">
+  <a class="text-white text-shadow" href="mailto:belovedtexasdoodles@gmail.com">belovedtexasdoodles@gmail.com</a>
+</h4>
+<h4 class="mb-4">
+  <a class="text-white text-shadow" href="tel:+19727425215">972-742-5215</a>
+</h4>
+
+<form action="https://api.staticforms.xyz/submit" method="post">
+  <input type="hidden" name="accessKey" value="f2012f3e-690c-4220-9327-b5e5ac0eac20">
+  <input type="hidden" name="redirectTo" value="{{site.baseUrl}}/contact-us/success">
+  <input type="text" name="honeypot" style="display: none;">
+  <div class="row" style="max-width: 800px;">
+    <div class="col-6 mb-3">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="first-name" placeholder="first name" required name="$first name">
+        <label for="first-name">First Name</label>
+      </div>
+    </div>
+    <div class="col-6 mb-3">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="last-name" placeholder="last name" required name="$last name">
+        <label for="last-name">Last Name</label>
+      </div>
+    </div>
+    <div class="col-12 mb-3">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="city-state" placeholder="City & State" required name="$city and state">
+        <label for="city-state">City & State</label>
+      </div>
+    </div>
+
+    <div class="col-12 mb-3">
+      <div class="form-floating">
+        <input type="tel" class="form-control" id="phone" placeholder="phone" required name="$phone">
+        <label for="phone">Phone</label>
+      </div>
+    </div>
+
+    <div class="col-12 mb-3">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="email" placeholder="email" required name="$email">
+        <label for="email">Email</label>
+      </div>
+    </div>
+
+    <div class="col-12 mb-3">
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="message" style="height: 10rem;" required name="$message"></textarea>
+        <label for="message">Message</label>
+      </div>
+    </div>
+
+    <div class="col-12 text-center mb-3">
+      <input class="btn btn-lg btn-primary btn-shadow" required type="submit">
+    </div>
+  </div>
+</form>

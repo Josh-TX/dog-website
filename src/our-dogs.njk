@@ -1,3 +1,5 @@
+{% from "macros/slideshow.njk" import slideshow %}
+
 <h1 class="text-shadow mb-4">Our Dogs</h1>
 
 <h4 class="text-shadow mb-4">
@@ -10,53 +12,27 @@
     <h4>{{adult.color}}
       {{adult.breed}}</h4>
     <div class="row">
-      <div class="col-md-4">
-        <div id="slideshow-{{adult.name}}" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-                      <button class="carousel-control-prev" type="button" data-bs-target="#slideshow-{{adult.name}}" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#slideshow-{{adult.name}}" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-            {% for image in adult.images %}
-              <div class="carousel-item{% if loop.index0 == 0 %} active{% endif %}">
-                <div class="aspect-1-1-container">
-                  <div class="absolute-fill">
-                    <img src="/_assets/images/{{ image }}" class="h-100 w-100" style="object-fit: cover;" alt="image of {{adult.name}}">
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-
-           <div class="carousel-indicators carousel-indicators-below mx-0">
-            {% for image in adult.images2 %}
-              <button type="button" data-bs-target="#slideshow-{{adult.name}}" data-bs-slide-to="{{loop.index0}}" class="{% if loop.index0 == 0 %} active{% endif %}" aria-label="Slide 1"></button>
-            {% endfor %}
-            {% for image in adult.images %}
-              <button 
-                  type="button"
-                  data-bs-target="#slideshow-{{adult.name}}" 
-                  data-bs-slide-to="{{loop.index0}}" 
-                  class="carousel-thumbnail {% if loop.index0 == 0 %} active{% endif %}" 
-                  aria-label="Slide 1">
-                <div class="aspect-1-1-container">
-                  <div class="absolute-fill border border-white">
-                    <img src="/_assets/images/{{ image }}" class="d-block h-100 w-100" style="object-fit: cover;" alt="image of {{adult.name}}">
-                  </div>
-                </div>
-              </button>
-            {% endfor %}
-          </div>
-        </div>
+      <div class="col-md-5">
+        {{ slideshow(id=adult.name, images = adult.images) }}
       </div>
-      <div class="col-md-8">
+      <div class="col-md-7">
         {% for bio in adult.biographies %}
           <p class="mb-3 mt-2 mt-md-0">{{bio}}</p>
         {% endfor %}
+
+        {% if adult.dnaTable %}
+        <h5>DNA Test Results</h5>
+        <table class="table table-sm text-white">
+          {% for row in adult.dnaTable %}
+        <tr>
+          {% for cell in row %}
+          <td>{{cell}}</td>
+                  {% endfor %}
+        </tr>
+        {% endfor %}
+        
+      </table>
+        {% endif %}
       </div>
     </div>
   </div>
