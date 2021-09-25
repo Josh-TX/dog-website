@@ -6,6 +6,6 @@
   "language": "en",
   "name": "Beloved Texas Doodles",
   "logoImage": "logo.png",
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "https://www.belovedtexasdoodles.com/",
   "puppyApplicationUrl": "/puppy-application"
 }
