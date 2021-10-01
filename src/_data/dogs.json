@@ -101,7 +101,7 @@
             "male": true,
             "color": "White and Apricot",
             "biographies": [
-                "Brody is a sweet confident & loving dog who is also very intelligent.  He is happy to sit in your lap and be loved on or give kisses. He also loves to run and play with other dogs.  Structurally very balanced, well proportioned, moving soundly and carries himself well. Available as a stud with live cover or side by side AI (within 1 hour of Allen Texas).  Also our reprodutive vet can ship fresh or frozen semen.",
+                "Brody is a sweet confident & loving dog who is also very intelligent.  He is happy to sit in your lap and be loved on or give kisses. He also loves to run and play with other dogs.  Structurally very balanced, well proportioned, moving soundly and carries himself well. Available as a stud with live cover or side by side AI (within 1 hour or so of Dallas Texas).  Also our reprodutive vet can ship fresh or frozen semen.",
                 "Height: 14.5\", Weight: 15 lbs"
             ],
             "images": [
@@ -114,12 +114,15 @@
                 ["cd/cd", ""],
                 ["Cu/CuC", "(Wavy/Curly coat)"],
                 ["I/i", ""],
-                ["F/Fi", ""],
+                ["F/F", "(Two copies of furnishings)"],
                 ["KB/ky", "(Carries Phantom)"],
-                ["sp/sp", "(White Spotting, Parti, or Piebald)"],
-                ["e/e B/b", "(Carries brown)"],
+                ["Sp/Sp", "(White Spotting, Parti, or Piebald)"],
+                ["e/e", ""],
+                ["B/b", "(Carries brown)"],
+                ["m/m", "(Not merle)"],
                 ["Carrier for PRA/PRCD", ""]
-            ]
+            ],
+            "contactUs": true
         }
     ]
 }

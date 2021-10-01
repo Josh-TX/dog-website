@@ -21,17 +21,23 @@
         {% endfor %}
 
         {% if adult.dnaTable %}
-        <h5>DNA Test Results</h5>
-        <table class="table table-sm text-white">
-          {% for row in adult.dnaTable %}
-        <tr>
-          {% for cell in row %}
-          <td>{{cell}}</td>
-                  {% endfor %}
-        </tr>
-        {% endfor %}
+          <h5>DNA Test Results</h5>
+          <table class="table table-sm text-white">
+            {% for row in adult.dnaTable %}
+              <tr>
+                {% for cell in row %}
+                  <td>{{cell}}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </table>
+        {% endif %}
         
-      </table>
+        {% if adult.contactUs %}
+        <div class="text-center">
+
+          <a href="/contact-us" class="btn btn-light text-primary fw-bolder">Contact Us</a>
+          </div>
         {% endif %}
       </div>
     </div>
